@@ -11,8 +11,9 @@ export async function GET(request: Request) {
 
   try {
     const assets = await getGalleryAssets(folder);
-    return NextResponse.json(assets);
+    return NextResponse.json(assets || []);
   } catch (error) {
-    return NextResponse.json({ error: 'Failed to fetch assets' }, { status: 500 });
+    console.error('Error fetching gallery assets:', error);
+    return NextResponse.json([]);
   }
 }
