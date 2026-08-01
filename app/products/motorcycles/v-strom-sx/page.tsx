@@ -25,14 +25,44 @@ const colorVariants = [
 ]
 
 const TABS = [
-  { id: 'introduction',      label: 'Introduction' },
-  { id: 'styling',           label: 'Styling' },
-  { id: 'engine-performance',label: 'Engine Performance' },
-  { id: 'chassis',           label: 'Chassis Design' },
-  { id: 'electronics',       label: 'Electronic Design' },
-  { id: 'ride-connect',      label: 'Suzuki Ride Connect' },
-  { id: 'accessories',       label: 'Accessories' },
-  { id: 'specifications',    label: 'Specifications' },
+  { id: 'overview',       label: 'Overview' },
+  { id: 'features',       label: 'Features' },
+  { id: 'accessories',    label: 'Accessories' },
+  { id: 'specifications', label: 'Specifications' },
+  { id: 'downloads',      label: 'Downloads' },
+]
+
+const accessoriesList = [
+  {
+    title: 'Accessory Bar',
+    img: '/images/bikes/v-strom-sx/accessories/Accessory Bar.jpg',
+    desc: 'Heavy-duty protective bar designed to shield your V-Strom SX during adventure rides.',
+  },
+  {
+    title: 'Fuel Tank Pad',
+    img: '/images/bikes/v-strom-sx/accessories/Fuel Tank Pad.jpg',
+    desc: 'Protective tank pad to prevent scratches from gear and belt buckles.',
+  },
+  {
+    title: 'Fuel Tank Protection',
+    img: '/images/bikes/v-strom-sx/accessories/FUEL TANK PROTECTION.jpg',
+    desc: 'Side tank grip pads providing enhanced knee control and tank surface protection.',
+  },
+  {
+    title: 'Low Height Seat Assembly',
+    img: '/images/bikes/v-strom-sx/accessories/SEAT ASSEMBLY-LOW HEIGHT.jpg',
+    desc: 'Low-profile seat option designed to lower seat height for comfortable footing.',
+  },
+  {
+    title: 'Wheel Decal (Red)',
+    img: '/images/bikes/v-strom-sx/accessories/WHEEL DECAL (RED).jpg',
+    desc: 'Sporty red wheel decals that highlight the adventure rim profile.',
+  },
+  {
+    title: 'Wheel Decal (Yellow)',
+    img: '/images/bikes/v-strom-sx/accessories/WHEEL DECAL (YELLOW).jpg',
+    desc: 'Vibrant yellow rim decals matching Suzuki’s iconic championship colorway.',
+  },
 ]
 
 const specTabs = [
@@ -451,106 +481,40 @@ export default function BikePage() {
         </div>
       </div>
 
-      {/* SECTION: INTRODUCTION */}
-      <section id="section-introduction" className="scroll-mt-32 bg-white py-16 sm:py-24 border-b border-gray-100">
+      {/* SECTION: FEATURES */}
+      <section id="section-features" className="scroll-mt-32 bg-gray-50 py-16 sm:py-24 border-b border-gray-100">
         <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
+          <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 uppercase tracking-wider mb-2">
-              Introduction to the <span className="text-suzuki-blue">Suzuki V-Strom SX 250</span>
+              Key Features of the <span className="text-suzuki-blue">V-Strom SX 250</span>
             </h2>
+            <p className="text-gray-600 text-base sm:text-lg max-w-3xl mx-auto">
+              Capable of sporty riding in the curves on paved roads and solid handling on unpaved roads — the Master of All Adventures.
+            </p>
           </div>
-          <div className="w-full relative overflow-hidden mb-10 shadow-xl border-y border-gray-200 bg-gray-50">
+
+          <div className="w-full relative overflow-hidden mb-16 shadow-xl border-y border-gray-200 bg-gray-50 rounded-3xl">
             <Image 
               src="/images/SectionBanner/V-Strom Outdoor 3x1.jpg" 
               alt="V-Strom SX Introduction" 
               width={1920} 
               height={1080} 
-              className="w-full h-auto object-cover max-h-[70vh]"
+              className="w-full h-auto object-cover max-h-[60vh]"
               unoptimized
             />
           </div>
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="text-gray-600 text-lg sm:text-xl leading-relaxed font-medium">
-              Capable of sporty riding in the curves on paved roads and solid handling on unpaved roads, the V-STROM SX can be considered a sport adventure tourer. What makes the V-STROM SX sport adventure tourer so popular is its distinct adventure-inspired looks, comfortable ergonomics and fully-realized utility that fit customer needs in each displacement class.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION: CHASSIS */}
-      <section id="section-chassis" className="scroll-mt-32 bg-gray-50 py-16 sm:py-24 border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 uppercase tracking-wider mb-2">
-              Chassis Design Built for the <span className="text-suzuki-blue">V-Strom 250</span> Riding Experience
-            </h2>
-          </div>
           
-          <div className="grid md:grid-cols-2 gap-6 mb-10">
-            <div className="rounded-2xl overflow-hidden bg-white border border-gray-100 flex items-center justify-center p-6 sm:p-10 shadow-lg group">
-              <div className="relative w-full h-[300px] sm:h-[400px]">
-                <Image 
-                  src="/images/bikes/v-strom-sx/v-strom-sx-yellowColour.png" 
-                  alt="Chassis Frame Design" 
-                  fill
-                  className="object-contain group-hover:scale-105 transition-transform duration-700 p-4"
-                  unoptimized
-                />
-              </div>
-            </div>
-            <div className="rounded-2xl overflow-hidden bg-white border border-gray-100 flex items-center justify-center p-6 sm:p-10 shadow-lg group">
-              <div className="relative w-full h-[300px] sm:h-[400px]">
-                <Image 
-                  src="/images/bikes/v-strom-sx/V-strom-sx-blackColour.png" 
-                  alt="Chassis Side View" 
-                  fill
-                  className="object-contain group-hover:scale-105 transition-transform duration-700 p-4"
-                  unoptimized
-                />
-              </div>
-            </div>
-          </div>
-          
-          <div className="bg-white border border-gray-100 rounded-2xl p-8 sm:p-12 flex flex-col md:flex-row items-center gap-6 md:gap-12 shadow-xl">
-            <div className="md:w-1/3">
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-suzuki-blue tracking-widest uppercase">RUGGEDLY COMPACT</h3>
-            </div>
-            <div className="md:w-2/3 border-t md:border-t-0 md:border-l border-gray-100 pt-6 md:pt-0 md:pl-12">
-              <p className="text-gray-600 text-lg sm:text-xl leading-relaxed font-medium">
-                A well-rounded chassis forms the backbone of the V-STROM SX, bringing together a feature set suited for riding both paved and unpaved roads.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION: STYLING */}
-      <section id="section-styling" className="scroll-mt-32 bg-white py-16 sm:py-24 border-b border-gray-100">
-        <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 uppercase tracking-wider mb-2">
-              Styling Highlights of the <span className="text-suzuki-blue">V-Strom SX 250</span>
-            </h2>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="lg:col-span-3 text-center mb-8">
-              <Image src="https://cdn.suzukimotorcycle.co.in/public-live/uploads/media-images/original/650px428px_6201f7abbe03f_69452d7406ce0.jpg" alt="Styling Highlights" width={800} height={400} className="w-full h-auto max-h-[60vh] object-cover rounded-2xl border border-gray-200 bg-gray-100" unoptimized />
-              <p className="mt-8 text-gray-600 text-lg leading-relaxed max-w-4xl mx-auto font-medium">
-                The design concept behind the V-STROM SX was "Toughness in a Slender Shell." Toughness comes from its rugged, adventure-inspired looks, confidence-inspiring chassis. The slender shell refers to a slim exterior shape owing to the compact engine design that appears to be wrapped in a "protector-like" shell. Its nimble handling and light weight make it simple to maneuver through the city.
-              </p>
-            </div>
-            
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-16">
             {[
-              { img: "back-desigen.jpg", title: "Beak Design", desc: "A beak design inspired by the legendary DR-Z racer and DR-BIG off-road models, which was brought back and remade specifically for the V-STROM." },
-              { img: "LED-Headlight.jpg", title: "LED Headlight", desc: "Stylish LED headlights are octagonal shaped with unique high/low beam set up arranging LED lights in three separate rows for a sleek look and strong road presence." },
-              { img: "LED-headlights.jpg", title: "LED Tail Lights", desc: "The LED tail lights are bright, keeping the machine highly visible at night." },
-              { img: "Knuckle-covers.jpg", title: "Knuckle Covers", desc: "Knuckle covers keep wind, rain and small rocks off the rider’s hands. This keeps them drier on long rides for added comfort and less fatigue." },
-              { img: "Windscreen.jpg", title: "Compact Windscreen", desc: "Compact yet highly functional windscreen shields well, reducing fatigue on long rides." },
-              { img: "Separate-seat.jpg", title: "Separate Seat", desc: "A separate seat not only lends a sporty look, but also provides plenty of comfort for both rider and passenger." },
-              { img: "Dual-exit-muffler.jpg", title: "Dual-Exit Muffler", desc: "The short, all-black dual-exit muffler is specifically designed for the V-STROM SX with rugged-looking muffler cap." },
-              { img: "Engine-under-cowling.jpg", title: "Engine Under-Cowling", desc: "Engine under-cowling offers a tough, rugged look and adds balance to the bike’s exterior lines." },
-              { img: "Graphics.jpg", title: "Sport-Inspired Graphics", desc: "Sport-inspired graphics hint at the V-STROM SX's sporty side, while a textured pattern improves both the look and feel." }
+              { img: "back-desigen.jpg", title: "Beak Design", desc: "A beak design inspired by the legendary DR-Z racer and DR-BIG off-road models, remade specifically for the V-STROM." },
+              { img: "LED-Headlight.jpg", title: "LED Headlight", desc: "Stylish octagonal LED headlight arranging lights in three separate rows for a sleek look and strong road presence." },
+              { img: "LED-headlights.jpg", title: "LED Tail Lights", desc: "Bright LED tail lights keeping the machine highly visible at night." },
+              { img: "Knuckle-covers.jpg", title: "Knuckle Covers", desc: "Knuckle covers keep wind, rain, and small rocks off the rider’s hands for added comfort on long rides." },
+              { img: "Windscreen.jpg", title: "Compact Windscreen", desc: "Compact yet highly functional windscreen shields well, reducing rider fatigue." },
+              { img: "Separate-seat.jpg", title: "Separate Seat", desc: "Sporty separate seat providing long-distance comfort for both rider and passenger." },
+              { img: "Dual-exit-muffler.jpg", title: "Dual-Exit Muffler", desc: "Short, all-black dual-exit muffler specifically designed with a rugged cap." },
+              { img: "Engine-under-cowling.jpg", title: "Engine Under-Cowling", desc: "Under-cowling offers a tough look and protects engine vitals." },
+              { img: "Graphics.jpg", title: "Sport-Inspired Graphics", desc: "Sport-inspired graphics hint at the V-STROM SX's adventure side." }
             ].map((feature, i) => (
               <div key={i} className="bg-white border border-gray-100 rounded-2xl overflow-hidden flex flex-col group shadow-lg hover:border-suzuki-blue/30 hover:-translate-y-1 transition-all">
                 <div className="h-56 relative overflow-hidden bg-gray-50 p-4 flex items-center justify-center">
@@ -563,87 +527,17 @@ export default function BikePage() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* SECTION: ENGINE PERFORMANCE */}
-      <section id="section-engine-performance" className="scroll-mt-32 bg-gray-50 py-16 sm:py-24 border-b border-gray-100">
-        <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 uppercase tracking-wider mb-2">
-              Engine Performance of the <span className="text-suzuki-blue">Suzuki V-Strom SX</span>
-            </h2>
-          </div>
-          
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16 max-w-7xl mx-auto">
-            <div className="order-2 lg:order-1">
-              <h3 className="text-3xl font-extrabold text-suzuki-blue mb-6 uppercase">Suzuki Eco Performance</h3>
-              <p className="text-gray-600 text-lg leading-relaxed mb-6 font-medium">
-                SEP engines feature weight saving and friction-reducing technology to allow both low fuel consumption and excellent power characteristics. In the V-STROM SX, the SEP engine offers brisk acceleration but uses little fuel in the process.
-              </p>
-              <div className="bg-white border border-gray-100 rounded-2xl p-8 shadow-lg inline-block hover:border-suzuki-blue/30 transition-colors">
-                <div className="text-3xl font-black text-suzuki-blue border-b-2 border-suzuki-blue inline-block mb-4">SEP</div>
-              </div>
-            </div>
-            <div className="rounded-2xl overflow-hidden bg-gray-100 flex items-center justify-center shadow-lg group h-[400px]">
-              <Image src="https://cdn.suzukimotorcycle.co.in/public-live/uploads/product-gallery-images/original/36/VStrom-Digital-Images-3rd-Part-520x420px-1.jpg" alt="Engine" width={600} height={400} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" unoptimized />
-            </div>
-          </div>
-          
-          <div className="bg-white border border-gray-100 rounded-3xl p-8 sm:p-12 shadow-xl max-w-7xl mx-auto flex flex-col md:flex-row gap-10 items-center">
+          {/* Engine & Ride Connect Cards */}
+          <div className="bg-white border border-gray-100 rounded-3xl p-8 sm:p-12 shadow-xl max-w-7xl mx-auto flex flex-col md:flex-row gap-10 items-center mb-12">
             <div className="md:w-1/3 flex justify-center">
-              <div className="text-3xl font-black text-suzuki-blue border-b-2 border-suzuki-blue inline-block drop-shadow-xl hover:scale-105 transition-transform">SOCS</div>
+              <div className="text-3xl font-black text-suzuki-blue border-b-2 border-suzuki-blue inline-block drop-shadow-xl">SOCS</div>
             </div>
             <div className="md:w-2/3 md:border-l border-gray-100 md:pl-10">
               <h3 className="text-2xl font-extrabold text-gray-900 mb-4 uppercase tracking-widest">Suzuki Oil Cooling System <span className="text-suzuki-blue">(SOCS)</span></h3>
               <p className="text-gray-500 text-md leading-relaxed">
-                The world's first oil-cooled motorcycle engine was developed by Suzuki and has been updated ever since, becoming the key to producing smaller, lighter engines as the use of an oil cooling system allows a smaller, more compact design. Not only does this system offer advantages in size, but it also excels in durability and combustion efficiency.
+                The Suzuki Oil Cooling System offers advantages in size, weight, durability, and combustion efficiency, providing brisk acceleration while keeping fuel consumption low.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION: ELECTRONIC DESIGN */}
-      <section id="section-electronics" className="scroll-mt-32 bg-white py-16 sm:py-24 border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 uppercase tracking-wider mb-2">
-              Electronic Features and <span className="text-suzuki-blue">Smart Tech</span>
-            </h2>
-          </div>
-          <div className="rounded-3xl overflow-hidden border border-gray-200 shadow-xl bg-gray-50 p-2 hover:border-suzuki-blue/30 transition-colors">
-             <Image src="https://cdn.suzukimotorcycle.co.in/public-live/uploads/product-gallery-images/original/36/VStrom-Digital-Images-3rd-Part-520x420px-2.jpg" alt="Electronic Console" width={800} height={400} className="w-full h-[400px] object-cover bg-gray-100 rounded-2xl hover:scale-[1.02] transition-transform duration-700" unoptimized />
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION: RIDE CONNECT */}
-      <section id="section-ride-connect" className="scroll-mt-32 bg-gray-50 py-16 sm:py-24 border-b border-gray-100">
-        <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 uppercase tracking-wider mb-2">
-              Suzuki <span className="text-suzuki-blue">Ride Connect</span>
-            </h2>
-          </div>
-          
-          <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
-            <div className="order-2 lg:order-1 grid sm:grid-cols-2 gap-6">
-              {[
-                { title: "Caller ID & Alerts", desc: "Get to know who is calling and view missed calls, without even touching the phone." },
-                { title: "Speed Alert", desc: "Set a speed limit on your Suzuki Ride Connect app and get an alert whenever you exceed that limit." },
-                { title: "Phone Battery Level", desc: "Phone Battery Level Display so that you never run out of power." },
-                { title: "Turn-by-Turn Nav", desc: "Big and Bold Turn-by-Turn Navigation icon display so that you never go off track." },
-                { title: "ETA Display", desc: "Estimated Time of Arrival display for never being late to your destination." }
-              ].map((feat, i) => (
-                <div key={i} className="bg-white border border-gray-100 rounded-2xl p-6 shadow-lg hover:border-suzuki-blue/30 transition-all hover:-translate-y-1">
-                  <h3 className="text-lg font-bold text-suzuki-blue mb-3 uppercase tracking-wider">{feat.title}</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">{feat.desc}</p>
-                </div>
-              ))}
-            </div>
-            <div className="order-1 lg:order-2 flex justify-center">
-              <Image src="https://cdn.suzukimotorcycle.co.in/public-live/uploads/product-gallery-images/original/36/VStrom-Digital-Images-3rd-Part-520x420px-3.jpg" alt="Ride Connect App" width={600} height={800} className="w-full h-auto max-w-md drop-shadow-[0_0_50px_rgba(0,51,153,0.15)] hover:scale-105 transition-transform duration-700 rounded-xl" unoptimized />
             </div>
           </div>
         </div>
@@ -654,15 +548,19 @@ export default function BikePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader eyebrow="Personalise Your Ride" title="Genuine" accent="Accessories"
             subtitle="Enhance your machine with official Suzuki accessories — designed to fit perfectly and built to last." />
-          <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {bikeData.accessoriesList.map((f, i) => (
-              <motion.div key={f.title}
+          <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {accessoriesList.map((item, i) => (
+              <motion.div key={item.title}
                 initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }} transition={{ delay: i * 0.07 }}
-                className="bg-gray-50 rounded-2xl p-6 shadow-lg border border-gray-100 hover:border-suzuki-blue/30 hover:-translate-y-1 transition-all">
-                <div className="text-4xl mb-3">{f.icon}</div>
-                <h3 className="text-base font-extrabold text-gray-900 uppercase tracking-wider mb-2">{f.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{f.desc}</p>
+                className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:border-suzuki-blue/30 hover:-translate-y-1 transition-all group">
+                <div className="relative h-60 overflow-hidden bg-gray-50 p-4">
+                  <Image src={item.img} alt={item.title} fill className="object-contain group-hover:scale-105 transition-transform duration-500" unoptimized />
+                </div>
+                <div className="p-6 border-t border-gray-100">
+                  <h3 className="text-base font-extrabold text-gray-900 uppercase tracking-wider mb-2">{item.title}</h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+                </div>
               </motion.div>
             ))}
           </div>
@@ -676,6 +574,84 @@ export default function BikePage() {
                 </svg>
               </motion.button>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION: SPECIFICATIONS */}
+      <section id="section-specifications" className="scroll-mt-32 bg-gray-50 py-16 sm:py-24 border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeader eyebrow="Technical Data" title="Complete" accent="Specifications"
+            subtitle="Every detail engineered to perfection — explore the full technical breakdown of the machine." />
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mt-10 mb-8">
+            {specTabs.map((tab) => (
+              <motion.button key={tab.id} onClick={() => setSpecTab(tab.id)}
+                whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}
+                className={'px-6 py-2.5 rounded-full font-bold uppercase tracking-wider text-xs transition-all duration-300 border border-gray-200 ' + (
+                  specTab === tab.id
+                    ? 'bg-suzuki-blue text-white shadow-lg shadow-suzuki-blue/20 border-suzuki-blue'
+                    : 'bg-white text-gray-500 hover:text-gray-900 hover:bg-gray-100'
+                )}>
+                {tab.label}
+              </motion.button>
+            ))}
+          </div>
+          <AnimatePresence mode="wait">
+            {specTabs.filter(t => t.id === specTab).map(tab => (
+              <motion.div key={tab.id}
+                initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -16 }}
+                transition={{ duration: 0.3 }}
+                className="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+                <div className="bg-gray-50 px-6 sm:px-10 py-5 border-b border-gray-100">
+                  <h3 className="text-suzuki-blue text-xl sm:text-2xl font-extrabold tracking-widest uppercase">{tab.label}</h3>
+                </div>
+                <div className="divide-y divide-gray-100">
+                  {tab.rows.map((row, i) => (
+                    <motion.div key={row.label}
+                      className="grid grid-cols-2 px-6 sm:px-10 py-4 hover:bg-gray-50 transition-colors"
+                      initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: i * 0.04 }}>
+                      <span className="text-gray-500 font-bold uppercase tracking-wider text-xs sm:text-sm flex items-center">{row.label}</span>
+                      <span className="text-gray-900 font-extrabold text-sm sm:text-base">{row.value}</span>
+                    </motion.div>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        </div>
+      </section>
+
+      {/* SECTION: DOWNLOADS */}
+      <section id="section-downloads" className="scroll-mt-32 py-16 sm:py-24 bg-white border-t border-gray-100">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <SectionHeader 
+            eyebrow="Resources" 
+            title="Official" 
+            accent="Downloads"
+            subtitle="Download the official brochure and technical specifications for the V-Strom SX." 
+          />
+          
+          <div className="mt-12 grid sm:grid-cols-1 gap-8 max-w-xl mx-auto">
+            <motion.a
+              href="/pdf/v-strom-sx-brochure.pdf"
+              target="_blank" 
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.02, y: -4 }} 
+              whileTap={{ scale: 0.98 }}
+              className="flex flex-col items-center gap-4 bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:border-suzuki-blue/30 transition-all group"
+            >
+              <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden shadow-sm border border-gray-200 bg-gray-50 flex items-center justify-center">
+                <Image 
+                  src="/images/bikes/v-strom-sx/v-strom-sx-yellowColour.png" 
+                  alt="V-Strom SX Download Brochure" 
+                  fill 
+                  className="object-contain p-4 group-hover:scale-105 transition-transform duration-500" 
+                  unoptimized 
+                />
+              </div>
+              <h3 className="text-lg font-extrabold text-gray-900 mt-2 group-hover:text-suzuki-blue transition-colors">V-Strom SX Download Brochure</h3>
+            </motion.a>
           </div>
         </div>
       </section>
