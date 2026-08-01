@@ -565,7 +565,7 @@ export default function BurgmanStreetExPage() {
             subtitle="Download the official brochures and technical specifications for the All-New Burgman Street EX."
           />
 
-          <div className="mt-12 grid sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="mt-12 grid sm:grid-cols-1 gap-8 max-w-xl mx-auto">
             <motion.a
               href="/pdf/burgman-street-ex-brochure.pdf"
               target="_blank"
@@ -574,10 +574,10 @@ export default function BurgmanStreetExPage() {
               whileTap={{ scale: 0.98 }}
               className="flex flex-col items-center gap-4 bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:border-suzuki-blue/30 transition-all group"
             >
-              <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-sm border border-gray-200">
+              <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden shadow-sm border border-gray-200">
                 <Image
                   src="/images/scooters/burgman-street-ex/overview_image_v2.webp"
-                  alt="Burgman Street EX Brochure"
+                  alt="Burgman Street EX Download Brochure"
                   fill
                   className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
                   unoptimized
@@ -591,35 +591,7 @@ export default function BurgmanStreetExPage() {
                   </span>
                 </div>
               </div>
-              <h3 className="text-lg font-extrabold text-gray-900 mt-2 group-hover:text-suzuki-blue transition-colors">Burgman Street EX Brochure</h3>
-            </motion.a>
-
-            <motion.a
-              href="/pdf/burgman-street-ex-abs-brochure.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.02, y: -4 }}
-              whileTap={{ scale: 0.98 }}
-              className="flex flex-col items-center gap-4 bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:border-suzuki-blue/30 transition-all group"
-            >
-              <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-sm border border-gray-200">
-                <Image
-                  src="/images/scooters/burgman-street-ex/overview_image_v2.webp"
-                  alt="Burgman Street EX ABS Brochure"
-                  fill
-                  className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                  unoptimized
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end justify-center pb-4">
-                  <span className="flex items-center gap-2 text-white text-sm font-bold">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                    </svg>
-                    Download PDF
-                  </span>
-                </div>
-              </div>
-              <h3 className="text-lg font-extrabold text-gray-900 mt-2 group-hover:text-suzuki-blue transition-colors">Burgman Street EX ABS Brochure</h3>
+              <h3 className="text-lg font-extrabold text-gray-900 mt-2 group-hover:text-suzuki-blue transition-colors">Burgman Street EX Download Brochure</h3>
             </motion.a>
           </div>
         </div>

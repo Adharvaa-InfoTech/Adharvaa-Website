@@ -811,49 +811,26 @@ export default function EAccessPage() {
             subtitle="Download technical sheets and the official vehicle brochure." 
           />
           
-          <div className="mt-12 grid sm:grid-cols-2 gap-6">
+          <div className="mt-12 grid sm:grid-cols-1 gap-8 max-w-xl mx-auto">
             <motion.a
               href="/pdf/e-access-brochure.pdf"
               target="_blank" 
               rel="noopener noreferrer"
-              whileHover={{ scale: 1.03, y: -4 }} 
-              whileTap={{ scale: 0.97 }}
-              className="flex flex-col items-center gap-4 bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:border-suzuki-blue/30 transition-all group"
+              whileHover={{ scale: 1.02, y: -4 }} 
+              whileTap={{ scale: 0.98 }}
+              className="flex flex-col items-center gap-4 bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:border-suzuki-blue/30 transition-all group"
             >
-              <div className="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center group-hover:bg-red-200 transition-colors">
-                <svg className="w-8 h-8 text-suzuki-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
-                </svg>
+              <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden shadow-sm border border-gray-200 bg-gray-50 flex items-center justify-center">
+                <Image 
+                  src="/images/products/e-access/overview-ev.png" 
+                  alt="eAccess Download Brochure" 
+                  fill 
+                  className="object-contain p-4 group-hover:scale-105 transition-transform duration-500" 
+                  unoptimized 
+                />
               </div>
-              <div>
-                <h3 className="text-lg font-extrabold text-gray-900 mb-1">Product Brochure</h3>
-                <p className="text-gray-500 text-sm">Official brochure (PDF)</p>
-              </div>
-              <span className="mt-2 px-6 py-2 bg-suzuki-blue text-white rounded-full text-sm font-bold group-hover:bg-blue-700 transition-colors">
-                Download PDF
-              </span>
+              <h3 className="text-lg font-extrabold text-gray-900 mt-2 group-hover:text-suzuki-blue transition-colors">eAccess Download Brochure</h3>
             </motion.a>
-
-            <motion.div 
-              whileHover={{ scale: 1.03, y: -4 }}
-              className="flex flex-col items-center gap-4 bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:border-suzuki-blue/30 transition-all group"
-            >
-              <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center group-hover:bg-blue-200 transition-colors">
-                <svg className="w-8 h-8 text-suzuki-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
-              </div>
-              <div>
-                <h3 className="text-lg font-extrabold text-gray-900 mb-1">Tech Specifications</h3>
-                <p className="text-gray-500 text-sm">Explore key technical sheets</p>
-              </div>
-              <button 
-                onClick={() => scrollTo('specifications')}
-                className="mt-2 px-6 py-2 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-full text-sm font-bold transition-colors"
-              >
-                View Specs
-              </button>
-            </motion.div>
           </div>
 
           {/* Final CTA */}
