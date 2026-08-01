@@ -89,7 +89,7 @@ const bikeData = {
   "namePart2": "250",
   "fullName": "GIXXER SF 250",
   "tagline": "Unleash the racer within with the GIXXER SF 250. Engineered for high-speed performance and precision handling, it is the ultimate quarter-liter sportbike.",
-  "brochureUrl": "https://www.adharvaasuzuki.com/_files/ugd/703249_5f82baa6c5f54cf7b4af3859749f9e0f.pdf",
+  "brochureUrl": "/pdf/gixxer-sf-250-brochure.pdf",
   "description": "The GIXXER SF 250 is a pure racing-inspired sportbike featuring Suzuki Oil Cooling System (SOCS) technology. Designed to deliver high power output, excellent efficiency, and precise handling characteristics for the streets and track.",
   "quickStats": [
     {

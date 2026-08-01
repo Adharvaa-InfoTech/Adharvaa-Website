@@ -169,7 +169,7 @@ const bikeData = {
   "namePart2": "SF",
   "fullName": "GIXXER SF",
   "tagline": "A perfect blend of sporty performance and everyday usability. The GIXXER SF is designed to thrill with its aerodynamic design and powerful engine.",
-  "brochureUrl": "https://www.adharvaasuzuki.com/_files/ugd/703249_c6f175d722b9485d85244d1408dc8388.pdf",
+  "brochureUrl": "/pdf/gixxer-sf-brochure.pdf",
   "description": "The GIXXER SF brings MotoGP styling to the street enthusiast. Powered by a fuel-injected 155cc SEP engine, it balances class-leading fuel economy with smooth sports performance and styling.",
   "quickStats": [
     {

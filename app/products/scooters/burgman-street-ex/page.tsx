@@ -74,7 +74,7 @@ const bikeData = {
   namePart2: "EX",
   fullName: "Suzuki Burgman Street EX",
   tagline: "The exclusive Burgman variant with enhanced luxury, advanced tech, and a premium road presence.",
-  brochureUrl: "https://www.adharvaasuzuki.com/_files/ugd/703249_66127890b8ae4a8c9e35a9b17b0c247d.pdf",
+  brochureUrl: "/pdf/burgman-street-ex-brochure.pdf",
   description: "The Suzuki Burgman Street EX features Suzuki Eco Performance Alpha (SEP-α), a larger 12-inch rear wheel, and advanced features like the Engine Auto Stop-Start system for an unmatched executive ride.",
   quickStats: [
     { label: "Engine", value: "124 cc" },

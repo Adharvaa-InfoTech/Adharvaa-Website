@@ -92,7 +92,7 @@ const bikeData = {
   namePart2: "125",
   fullName: "Suzuki Access 125",
   tagline: "A timeless classic that combines retro charm with modern performance. Experience the ultimate comfort and style with the legendary Suzuki Access 125.",
-  brochureUrl: "https://www.adharvaasuzuki.com/_files/ugd/5dd563_c06d91f13cba4c32b981fd1cc0abafd4.pdf",
+  brochureUrl: "/pdf/access-125-brochure.pdf",
   description: "The Suzuki Access 125 is India's favorite 125cc scooter, known for its premium chrome design, powerful yet efficient performance, and unparalleled comfort. Designed with standard SEP engine technology and rich smartphone connectivity features.",
   quickStats: [
     { label: "Engine", value: "124 cc" },

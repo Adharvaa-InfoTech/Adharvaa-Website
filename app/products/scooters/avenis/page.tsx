@@ -98,7 +98,7 @@ const bikeData = {
   namePart2: "Avenis",
   fullName: "Suzuki Avenis",
   tagline: "Unleash your sporty side. The Avenis combines aggressive styling with peppy performance to dominate the streets.",
-  brochureUrl: "https://www.adharvaasuzuki.com/_files/ugd/703249_c21f7596ff174828b84d4128f6b0fdd6.pdf",
+  brochureUrl: "/pdf/avenis-brochure.pdf",
   description: "Designed for the bold, the Suzuki Avenis features an advanced sporty design, LED lighting, and Suzuki Eco Performance (SEP) technology. It offers dynamic handling, quick acceleration, and modern connectivity features.",
   quickStats: [
     { label: "Engine", value: "124 cc" },
@@ -119,87 +119,87 @@ const bikeData = {
 const featuresList = [
   {
     title: 'Advanced Sporty Styling',
-    img: '/images/scooters/avenis/features/ADVANCED_SPORTY_STYLING.webp',
+    img: '/images/scooters/Avenis/features/ADVANCED_SPORTY_STYLING.webp',
     desc: 'Aggressive and sharp design language that makes a bold statement on the streets.',
   },
   {
     title: 'All New Edgy Graphics',
-    img: '/images/scooters/avenis/features/ALL_NEW_EDGY_GRAPHICS.webp',
+    img: '/images/scooters/Avenis/features/ALL_NEW_EDGY_GRAPHICS.webp',
     desc: 'Striking race-inspired graphics that highlight the dynamic contours of the Avenis.',
   },
   {
     title: 'Body Mount Bright LED Headlamp',
-    img: '/images/scooters/avenis/features/BODY_MOUNT_BRIGHT_LED_HEADLAMP.webp',
+    img: '/images/scooters/Avenis/features/BODY_MOUNT_BRIGHT_LED_HEADLAMP.webp',
     desc: 'Powerful LED headlamp mounted on the apron for a distinctive look and excellent illumination.',
   },
   {
     title: 'Convenient Dual Luggage Hooks',
-    img: '/images/scooters/avenis/features/CONVENIENT_DUAL_LUGGAGE_HOOKS.webp',
+    img: '/images/scooters/Avenis/features/CONVENIENT_DUAL_LUGGAGE_HOOKS.webp',
     desc: 'Practical hooks for securing your daily shopping and bags safely on the front board.',
   },
   {
     title: 'External Hinge Type Fuel Cap',
-    img: '/images/scooters/avenis/features/EXTERNAL_HINGE_TYPE_FUEL_CAP.webp',
+    img: '/images/scooters/Avenis/features/EXTERNAL_HINGE_TYPE_FUEL_CAP.webp',
     desc: 'Easily accessible external fuel filler cap so you don’t have to lift the seat at the petrol station.',
   },
   {
     title: 'Front Box With USB Socket',
-    img: '/images/scooters/avenis/features/FRONT_BOX_WITH_USB_SOCKET.webp',
+    img: '/images/scooters/Avenis/features/FRONT_BOX_WITH_USB_SOCKET.webp',
     desc: 'A covered front compartment equipped with a USB port to charge your phone on the go.',
   },
   {
     title: 'Front Rack For Storage',
-    img: '/images/scooters/avenis/features/FRONT_RACK_FOR_STORAGE.webp',
+    img: '/images/scooters/Avenis/features/FRONT_RACK_FOR_STORAGE.webp',
     desc: 'Additional open storage space on the front for quick access to your water bottle or small items.',
   },
   {
     title: 'Integrated Engine Start and Stop Switch',
-    img: '/images/scooters/avenis/features/INTEGRATED_ENGINE_START_AND_STOP_SWITCH_WITH_SUZUKI_EASY_START_SYSTEM.jpg',
+    img: '/images/scooters/Avenis/features/INTEGRATED_ENGINE_START_AND_STOP_SWITCH_WITH_SUZUKI_EASY_START_SYSTEM.jpg',
     desc: 'Convenient 2-in-1 switch featuring the Suzuki Easy Start System for quick ignition.',
   },
   {
     title: 'Large Under Seat Storage Space',
-    img: '/images/scooters/avenis/features/LARGE_UNDER_SEAT_STORAGE_SPACE.webp',
+    img: '/images/scooters/Avenis/features/LARGE_UNDER_SEAT_STORAGE_SPACE.webp',
     desc: 'Spacious 21.8L under-seat storage to safely secure your helmet and riding gear.',
   },
   {
     title: 'Long & Wide Floorboard',
-    img: '/images/scooters/avenis/features/LONG_&_WIDE_FLOORBOARD.webp',
+    img: '/images/scooters/Avenis/features/LONG_&_WIDE_FLOORBOARD.webp',
     desc: 'Ample legroom providing a comfortable riding posture and extra space for carrying luggage.',
   },
   {
     title: 'Motorcycle Inspired Rear Indicators',
-    img: '/images/scooters/avenis/features/MOTORCYCLE_INSPIRED_REAR_INDICATORS.webp',
+    img: '/images/scooters/Avenis/features/MOTORCYCLE_INSPIRED_REAR_INDICATORS.webp',
     desc: 'Aggressive turn signals that give the rear profile a sharp, sporty motorcycle look.',
   },
   {
     title: 'Side Stand Interlock',
-    img: '/images/scooters/avenis/features/SIDE_STAND_INTERLOCK.webp',
+    img: '/images/scooters/Avenis/features/SIDE_STAND_INTERLOCK.webp',
     desc: 'Crucial safety feature that ensures the engine won’t start while the side stand is engaged.',
   },
   {
     title: 'Sporty Alloy Wheels',
-    img: '/images/scooters/avenis/features/SPORTY_ALLOY_WHEELS.webp',
+    img: '/images/scooters/Avenis/features/SPORTY_ALLOY_WHEELS.webp',
     desc: 'Lightweight alloy wheels designed for superior handling, stability, and aesthetic appeal.',
   },
   {
     title: 'Sporty LED Tail Lamp',
-    img: '/images/scooters/avenis/features/SPORTY_LED_TAIL_LAMP.webp',
+    img: '/images/scooters/Avenis/features/SPORTY_LED_TAIL_LAMP.webp',
     desc: 'Distinctive dual-LED tail light design that leaves a lasting impression.',
   },
   {
     title: 'Sporty Meter Visor',
-    img: '/images/scooters/avenis/features/SPORTY_METER_VISOR.webp',
+    img: '/images/scooters/Avenis/features/SPORTY_METER_VISOR.webp',
     desc: 'Tinted front visor that adds an aerodynamic touch and shields the digital console.',
   },
   {
     title: 'Sporty Muffler Cover',
-    img: '/images/scooters/avenis/features/SPORTY_MUFFLER_COVER.webp',
+    img: '/images/scooters/Avenis/features/SPORTY_MUFFLER_COVER.webp',
     desc: 'Dynamic exhaust cover that adds an edgy performance look to the side profile.',
   },
   {
     title: 'Sporty Split Grab Rail',
-    img: '/images/scooters/avenis/features/SPORTY_SPLIT_GRAB_RAIL.webp',
+    img: '/images/scooters/Avenis/features/SPORTY_SPLIT_GRAB_RAIL.webp',
     desc: 'Aggressive split-design grab rail offering secure grip for the pillion while enhancing the sporty vibe.',
   }
 ]
@@ -207,42 +207,42 @@ const featuresList = [
 const accessoriesList = [
   {
     title: 'Accessory Bar',
-    img: '/images/scooters/avenis/accessories/ACCESSORY_BAR.jpg',
+    img: '/images/scooters/Avenis/accessories/ACCESSORY_BAR.jpg',
     desc: 'Sturdy protective bar designed to shield your Avenis from minor scrapes.',
   },
   {
     title: 'Body Cover',
-    img: '/images/scooters/avenis/accessories/BODY_COVER.jpg',
+    img: '/images/scooters/Avenis/accessories/BODY_COVER.jpg',
     desc: 'High-quality cover to protect your scooter from dust, rain, and UV rays.',
   },
   {
     title: 'Floor Mat (Green)',
-    img: '/images/scooters/avenis/accessories/FLOOR_MAT_GREEN.webp',
+    img: '/images/scooters/Avenis/accessories/FLOOR_MAT_GREEN.webp',
     desc: 'Stylish green accented floor mat matching the sporty graphics.',
   },
   {
     title: 'Floor Mat (Red)',
-    img: '/images/scooters/avenis/accessories/FLOOR_MAT_RED.webp',
+    img: '/images/scooters/Avenis/accessories/FLOOR_MAT_RED.webp',
     desc: 'Bold red accented floor mat that enhances the aggressive styling.',
   },
   {
     title: 'Knuckle Cover',
-    img: '/images/scooters/avenis/accessories/KNUCKLE_COVER.jpg',
+    img: '/images/scooters/Avenis/accessories/KNUCKLE_COVER.jpg',
     desc: 'Sporty knuckle guards to protect your hands from wind and debris.',
   },
   {
     title: 'Rear Footrest',
-    img: '/images/scooters/avenis/accessories/REAR_FOOTREST.jpg',
+    img: '/images/scooters/Avenis/accessories/REAR_FOOTREST.jpg',
     desc: 'Ergonomic cast aluminum pegs for superior pillion comfort.',
   },
   {
     title: 'Seat Cover (Grey)',
-    img: '/images/scooters/avenis/accessories/SEAT_COVER_GREY.jpg',
+    img: '/images/scooters/Avenis/accessories/SEAT_COVER_GREY.jpg',
     desc: 'Premium dual-tone grey seat cover for a sleek and clean look.',
   },
   {
     title: 'Seat Cover (Orange)',
-    img: '/images/scooters/avenis/accessories/SEAT_COVER_ORANGE.jpg',
+    img: '/images/scooters/Avenis/accessories/SEAT_COVER_ORANGE.jpg',
     desc: 'Vibrant orange seat cover that perfectly complements the Avenis race graphics.',
   }
 ]
