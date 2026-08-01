@@ -55,8 +55,8 @@ const scooterCards: ScooterCard[] = [
     cardImage: '/images/scooters/cards/Burgman Street.jpg',
     link: '/products/scooters/burgman-street',
     variants: [
-      { name: 'Standard Edition', image: '/images/scooters/Burgman Street/Burgman Street Standard Edition.png' },
-      { name: 'Ride Connect Edition', image: '/images/scooters/Burgman Street/Burgman Street Ride Connect Edition.png' },
+      { name: 'Standard Edition', image: '/images/scooters/Burgman Street/Burgman Street Standard Edition/Metallic Matte Black.png' },
+      { name: 'Ride Connect Edition', image: '/images/scooters/Burgman Street/Burgman Street Ride Connect Edition/Metallic Matte Black No.2.png' },
     ],
   },
   {
