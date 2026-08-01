@@ -519,7 +519,7 @@ export default function BurgmanStreetPage() {
             accent="Downloads"
             subtitle="Download the official brochures and technical specifications for the Suzuki Burgman Street."
           />
-          <div className="mt-12 grid sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="mt-12 grid sm:grid-cols-1 gap-8 max-w-xl mx-auto">
             <motion.a
               href="/pdf/burgman-street-brochure.pdf"
               target="_blank"
@@ -527,35 +527,16 @@ export default function BurgmanStreetPage() {
               whileHover={{ scale: 1.02, y: -4 }}
               whileTap={{ scale: 0.98 }}
               className="flex flex-col items-center gap-4 bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:border-suzuki-blue/30 transition-all group">
-              <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-sm border border-gray-200 bg-gray-50 flex items-center justify-center">
+              <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden shadow-sm border border-gray-200 bg-gray-50 flex items-center justify-center">
                 <Image 
-                  src="/images/scooters/Burgman Street/Burgman Street Standard Edition/Metallic Matte Black.png" 
-                  alt="Burgman Street Brochure" 
+                  src="/images/scooters/burgman-street/overview_image.png" 
+                  alt="Burgman Street Download Brochure" 
                   fill 
                   className="object-contain p-4 group-hover:scale-105 transition-transform duration-500" 
                   unoptimized 
                 />
               </div>
-              <h3 className="text-lg font-extrabold text-gray-900 mt-2 group-hover:text-suzuki-blue transition-colors">Burgman Street Brochure</h3>
-            </motion.a>
-
-            <motion.a
-              href="/pdf/burgman-street-abs-brochure.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.02, y: -4 }}
-              whileTap={{ scale: 0.98 }}
-              className="flex flex-col items-center gap-4 bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:border-suzuki-blue/30 transition-all group">
-              <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-sm border border-gray-200 bg-gray-50 flex items-center justify-center">
-                <Image 
-                  src="/images/scooters/Burgman Street/Burgman Street Ride Connect Edition/Metallic Matte Black No.2.png" 
-                  alt="Burgman Street Ride Connect Brochure" 
-                  fill 
-                  className="object-contain p-4 group-hover:scale-105 transition-transform duration-500" 
-                  unoptimized 
-                />
-              </div>
-              <h3 className="text-lg font-extrabold text-gray-900 mt-2 group-hover:text-suzuki-blue transition-colors">Burgman Street Ride Connect Brochure</h3>
+              <h3 className="text-lg font-extrabold text-gray-900 mt-2 group-hover:text-suzuki-blue transition-colors">Burgman Street Download Brochure</h3>
             </motion.a>
           </div>
         </div>
