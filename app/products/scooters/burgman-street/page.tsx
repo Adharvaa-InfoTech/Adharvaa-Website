@@ -528,9 +528,13 @@ export default function BurgmanStreetPage() {
               whileTap={{ scale: 0.98 }}
               className="flex flex-col items-center gap-4 bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:border-suzuki-blue/30 transition-all group">
               <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-sm border border-gray-200 bg-gray-50 flex items-center justify-center">
-                <svg className="w-16 h-16 text-suzuki-blue/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
-                </svg>
+                <Image 
+                  src="/images/scooters/Burgman Street/Burgman Street Standard Edition/Metallic Matte Black.png" 
+                  alt="Burgman Street Brochure" 
+                  fill 
+                  className="object-contain p-4 group-hover:scale-105 transition-transform duration-500" 
+                  unoptimized 
+                />
               </div>
               <h3 className="text-lg font-extrabold text-gray-900 mt-2 group-hover:text-suzuki-blue transition-colors">Burgman Street Brochure</h3>
             </motion.a>
@@ -543,9 +547,13 @@ export default function BurgmanStreetPage() {
               whileTap={{ scale: 0.98 }}
               className="flex flex-col items-center gap-4 bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:border-suzuki-blue/30 transition-all group">
               <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-sm border border-gray-200 bg-gray-50 flex items-center justify-center">
-                <svg className="w-16 h-16 text-suzuki-blue/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
-                </svg>
+                <Image 
+                  src="/images/scooters/Burgman Street/Burgman Street Ride Connect Edition/Metallic Matte Black No.2.png" 
+                  alt="Burgman Street Ride Connect Brochure" 
+                  fill 
+                  className="object-contain p-4 group-hover:scale-105 transition-transform duration-500" 
+                  unoptimized 
+                />
               </div>
               <h3 className="text-lg font-extrabold text-gray-900 mt-2 group-hover:text-suzuki-blue transition-colors">Burgman Street Ride Connect Brochure</h3>
             </motion.a>
