@@ -30,7 +30,6 @@ const TABS = [
   { id: 'accessories',    label: 'Accessories' },
   { id: 'specifications', label: 'Specifications' },
   { id: 'price',          label: 'Price' },
-  { id: 'gallery',        label: 'Gallery' },
   { id: 'downloads',      label: 'Downloads' },
 ]
 
@@ -754,82 +753,30 @@ export default function BikePage() {
         </div>
       </section>
 
-      {/* SECTION: GALLERY */}
-      <section id="section-gallery" className="scroll-mt-32 bg-gray-50 py-16 sm:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeader eyebrow="Explore Every Angle" title="Visual" accent="Gallery"
-            subtitle="Choose your favorite color option to customize your view." />
-          <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6">
-            {colorVariants.map((c, i) => (
-              <motion.div key={c.name}
-                initial={{ opacity: 0, scale: 0.92 }} whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }} transition={{ delay: i * 0.1 }}
-                whileHover={{ scale: 1.02, y: -4 }}
-                className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 cursor-pointer group"
-                onClick={() => { setSelectedColor(c); scrollTo('overview') }}>
-                <div className="relative h-56 sm:h-64" style={{ backgroundColor: c.hex + '18' }}>
-                  <Image src={c.image} alt={c.name} fill
-                    className="object-contain p-4 group-hover:scale-105 transition-transform duration-500" />
-                </div>
-                <div className="px-6 py-4 flex items-center justify-between border-t border-gray-100">
-                  <div className="flex items-center gap-3">
-                    <div className="w-4 h-4 rounded-full border-2 border-gray-300" style={{ backgroundColor: c.hex }} />
-                    <span className="font-bold text-gray-800 text-sm">{c.name}</span>
-                  </div>
-                  <span className="text-xs text-suzuki-blue font-bold uppercase tracking-wider flex items-center gap-1 group-hover:gap-2 transition-all">
-                    Select
-                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </span>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* SECTION: DOWNLOADS */}
       <section id="section-downloads" className="scroll-mt-32 py-16 sm:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <SectionHeader eyebrow="Resources" title="Official" accent="Downloads"
             subtitle="Download technical sheets and the official vehicle brochure." />
-          <div className="mt-12 grid sm:grid-cols-2 gap-6">
+          <div className="mt-12 grid sm:grid-cols-1 gap-8 max-w-xl mx-auto">
             <motion.a
-              href={bikeData.brochureUrl}
+              href="/pdf/gixxer-sf-brochure.pdf"
               target="_blank" rel="noopener noreferrer"
-              whileHover={{ scale: 1.03, y: -4 }} whileTap={{ scale: 0.97 }}
-              className="flex flex-col items-center gap-4 bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:border-suzuki-blue/30 transition-all group">
-              <div className="w-16 h-16 bg-suzuki-red/10 rounded-2xl flex items-center justify-center group-hover:bg-suzuki-red/20 transition-colors">
-                <svg className="w-8 h-8 text-suzuki-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
-                </svg>
+              whileHover={{ scale: 1.02, y: -4 }} whileTap={{ scale: 0.98 }}
+              className="flex flex-col items-center gap-4 bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:border-suzuki-blue/30 transition-all group">
+              <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden shadow-sm border border-gray-200 bg-gray-50 flex items-center justify-center">
+                <Image 
+                  src="/images/bikes/gixxer-sf/gixxer-sf-brochure-thumb.jpg" 
+                  alt="GIXXER / GIXXER SF Download Brochure" 
+                  fill 
+                  className="object-cover group-hover:scale-105 transition-transform duration-500" 
+                  unoptimized 
+                />
               </div>
-              <div>
-                <h3 className="text-lg font-extrabold text-gray-900 mb-1">Product Brochure</h3>
-                <p className="text-gray-500 text-sm">Official brochure (PDF)</p>
-              </div>
-              <span className="mt-2 px-6 py-2 bg-suzuki-blue text-white rounded-full text-sm font-bold group-hover:bg-blue-700 transition-colors">
-                Download PDF
-              </span>
+              <h3 className="text-lg font-extrabold text-gray-900 mt-2 group-hover:text-suzuki-blue transition-colors">GIXXER / GIXXER SF Download Brochure</h3>
             </motion.a>
-
-            <motion.div whileHover={{ scale: 1.03, y: -4 }}
-              className="flex flex-col items-center gap-4 bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:border-suzuki-blue/30 transition-all group">
-              <div className="w-16 h-16 bg-suzuki-blue/10 rounded-2xl flex items-center justify-center group-hover:bg-suzuki-blue/20 transition-colors">
-                <svg className="w-8 h-8 text-suzuki-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
-              </div>
-              <div>
-                <h3 className="text-lg font-extrabold text-gray-900 mb-1">Tech Specifications</h3>
-                <p className="text-gray-500 text-sm">Explore key technical sheets</p>
-              </div>
-              <button onClick={() => scrollTo('specifications')}
-                className="mt-2 px-6 py-2 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-full text-sm font-bold transition-colors">
-                View Specs
-              </button>
-            </motion.div>
           </div>
 
           {/* Final CTA */}

@@ -822,10 +822,10 @@ export default function EAccessPage() {
             >
               <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden shadow-sm border border-gray-200 bg-gray-50 flex items-center justify-center">
                 <Image 
-                  src="/images/products/e-access/overview-ev.png" 
+                  src="/images/products/e-access/e-access-brochure-thumb.png" 
                   alt="eAccess Download Brochure" 
                   fill 
-                  className="object-contain p-4 group-hover:scale-105 transition-transform duration-500" 
+                  className="object-cover group-hover:scale-105 transition-transform duration-500" 
                   unoptimized 
                 />
               </div>
