@@ -24,24 +24,41 @@ export interface CloudinaryResource {
  */
 export async function getGalleryFolders() {
   try {
-    const result = await cloudinary.api.root_folders();
-    let folders: any[] = result.folders || [];
+    let folders: any[] = [];
+    
+    // First attempt to fetch subfolders inside 'GALLERY'
+    try {
+      const subFolderResult = await cloudinary.api.sub_folders('GALLERY');
+      if (subFolderResult.folders && subFolderResult.folders.length > 0) {
+        folders = subFolderResult.folders;
+      }
+    } catch (e) {
+      // Fallback to root folders if GALLERY doesn't exist
+    }
+
+    if (folders.length === 0) {
+      const rootResult = await cloudinary.api.root_folders();
+      folders = rootResult.folders || [];
+    }
 
     // Fetch the first image for each folder to use as a thumbnail
     const foldersWithThumbnails = await Promise.all(
       folders.map(async (folder) => {
         try {
+          const folderPath = folder.path || folder.name;
           const assets = await cloudinary.search
-            .expression(`folder:${folder.name}`)
+            .expression(`folder:"${folderPath}"`)
             .max_results(1)
             .execute();
           
           return {
             ...folder,
+            name: folder.name,
+            path: folder.path || folder.name,
             thumbnail: assets.resources[0]?.secure_url || null
           };
         } catch (err) {
-          return { ...folder, thumbnail: null };
+          return { ...folder, name: folder.name, path: folder.path || folder.name, thumbnail: null };
         }
       })
     );
@@ -58,8 +75,9 @@ export async function getGalleryFolders() {
  */
 export async function getGalleryAssets(folderName: string) {
   try {
+    const decodedFolder = decodeURIComponent(folderName);
     const result = await cloudinary.search
-      .expression(`folder:${folderName}`)
+      .expression(`folder:"GALLERY/${decodedFolder}" OR folder:"${decodedFolder}"`)
       .sort_by('created_at', 'desc')
       .max_results(100)
       .execute();
