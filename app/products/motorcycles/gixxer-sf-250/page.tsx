@@ -29,6 +29,7 @@ const TABS = [
   { id: 'features',       label: 'Features' },
   { id: 'accessories',    label: 'Accessories' },
   { id: 'specifications', label: 'Specifications' },
+  { id: 'downloads',      label: 'Downloads' },
 ]
 
 const specTabs = [
@@ -577,6 +578,60 @@ export default function BikePage() {
               </motion.div>
             ))}
           </AnimatePresence>
+        </div>
+      </section>
+
+      {/* SECTION: DOWNLOADS */}
+      <section id="section-downloads" className="scroll-mt-32 py-16 sm:py-24 bg-white border-t border-gray-100">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <SectionHeader 
+            eyebrow="Resources" 
+            title="Official" 
+            accent="Downloads"
+            subtitle="Download the official brochures and technical specifications for the GIXXER SF 250." 
+          />
+          
+          <div className="mt-12 grid sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <motion.a
+              href="/pdf/gixxer-sf-250-brochure.pdf"
+              target="_blank" 
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.02, y: -4 }} 
+              whileTap={{ scale: 0.98 }}
+              className="flex flex-col items-center gap-4 bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:border-suzuki-blue/30 transition-all group"
+            >
+              <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden shadow-sm border border-gray-200 bg-gray-50 flex items-center justify-center">
+                <Image 
+                  src="/images/bikes/gixxer-sf-250/gixxer-sf-250-ffv-brochure-thumb.jpg" 
+                  alt="GIXXER SF 250 FFV Download Brochure" 
+                  fill 
+                  className="object-cover group-hover:scale-105 transition-transform duration-500" 
+                  unoptimized 
+                />
+              </div>
+              <h3 className="text-lg font-extrabold text-gray-900 mt-2 group-hover:text-suzuki-blue transition-colors">GIXXER SF 250 FFV Download Brochure</h3>
+            </motion.a>
+
+            <motion.a
+              href="/pdf/gixxer-sf-250-brochure.pdf"
+              target="_blank" 
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.02, y: -4 }} 
+              whileTap={{ scale: 0.98 }}
+              className="flex flex-col items-center gap-4 bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:border-suzuki-blue/30 transition-all group"
+            >
+              <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden shadow-sm border border-gray-200 bg-gray-50 flex items-center justify-center">
+                <Image 
+                  src="/images/bikes/gixxer-sf-250/gixxer-sf-250-brochure-thumb.jpg" 
+                  alt="GIXXER SF 250 Download Brochure" 
+                  fill 
+                  className="object-cover group-hover:scale-105 transition-transform duration-500" 
+                  unoptimized 
+                />
+              </div>
+              <h3 className="text-lg font-extrabold text-gray-900 mt-2 group-hover:text-suzuki-blue transition-colors">GIXXER SF 250 Download Brochure</h3>
+            </motion.a>
+          </div>
         </div>
       </section>
 
