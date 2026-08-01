@@ -30,11 +30,11 @@ export async function POST(req: NextRequest) {
       message || 'No message provided',
       '',
       `---`,
-      `This inquiry should be sent to: care.suzuki@adharvaa.in`,
+      `This inquiry should be sent to: sales.suzuki@adharvaa.in`,
     ]
 
     // In a real deployment, integrate with an email service (SendGrid, SMTP, etc.)
-    console.log(`QUOTE REQUEST TO: service.suzuki@adharvaa.in\n\n` + lines.join('\n'))
+    console.log(`QUOTE REQUEST TO: sales.suzuki@adharvaa.in\n\n` + lines.join('\n'))
 
     return new Response(JSON.stringify({ ok: true }), {
       status: 200,

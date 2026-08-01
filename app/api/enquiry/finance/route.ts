@@ -32,10 +32,10 @@ export async function POST(req: NextRequest) {
       message || 'No message provided',
       '',
       `---`,
-      `This inquiry should be sent to: care.suzuki@adharvaa.in`,
+      `This inquiry should be sent to: finance.suzuki@adharvaa.in`,
     ]
 
-    console.log(`FINANCE APPLICATION TO: service.suzuki@adharvaa.in\n\n` + lines.join('\n'))
+    console.log(`FINANCE APPLICATION TO: finance.suzuki@adharvaa.in\n\n` + lines.join('\n'))
 
     return new Response(JSON.stringify({ ok: true }), {
       status: 200,

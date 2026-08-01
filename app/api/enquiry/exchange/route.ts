@@ -28,10 +28,10 @@ export async function POST(req: NextRequest) {
       `Location                : ${location}`,
       '',
       `---`,
-      `This inquiry should be sent to: care.suzuki@adharvaa.in`,
+      `This inquiry should be sent to: svm.suzuki@adharvaa.in`,
     ]
 
-    console.log(`EXCHANGE REQUEST TO: service.suzuki@adharvaa.in\n\n` + lines.join('\n'))
+    console.log(`EXCHANGE REQUEST TO: svm.suzuki@adharvaa.in\n\n` + lines.join('\n'))
 
     return new Response(JSON.stringify({ ok: true }), {
       status: 200,

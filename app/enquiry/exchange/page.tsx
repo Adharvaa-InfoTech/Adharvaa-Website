@@ -80,7 +80,7 @@ export default function ExchangePage() {
     setIsSubmitting(true)
 
     try {
-      const TARGET_EMAIL = "sales.suzuki@adharvaa.in"
+      const TARGET_EMAIL = "svm.suzuki@adharvaa.in"
       const endpoint = `https://formsubmit.co/${TARGET_EMAIL}`
 
       const formDataToSend = new FormData()

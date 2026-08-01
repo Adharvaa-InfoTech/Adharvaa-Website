@@ -73,7 +73,7 @@ export default function InsurancePage() {
     setIsSubmitting(true)
 
     try {
-      const TARGET_EMAIL = "care.suzuki@adharvaa.in"
+      const TARGET_EMAIL = "insurance.suzuki@adharvaa.in"
       const endpoint = `https://formsubmit.co/${TARGET_EMAIL}`
 
       const formDataToSend = new FormData()
