@@ -70,17 +70,17 @@ const specTabs = [
     "id": "engine",
     "label": "Engine",
     "rows": [
-      { "label": "Engine Type",        "value": "4-Stroke, Single-Cylinder, Oil-Cooled, SOHC" },
-      { "label": "Valve System",        "value": "4 Valve" },
+      { "label": "Engine Type",        "value": "4-stroke, Single-cylinder, oil-cooled, SOHC" },
+      { "label": "Valve System",        "value": "4 valve" },
       { "label": "Bore x Stroke",       "value": "76.0mm x 54.9mm" },
       { "label": "Displacement",        "value": "249 cm³" },
       { "label": "Compression Ratio",   "value": "10.7 : 1" },
-      { "label": "Max Power",           "value": "26.5 PS @ 9,300 rpm" },
-      { "label": "Max Torque",          "value": "22.2 Nm @ 7,300 rpm" },
+      { "label": "Max Power",           "value": "26.5ps@9300rpm" },
+      { "label": "Max Torque",          "value": "22.2Nm@7300rpm" },
       { "label": "Fuel System",         "value": "Fuel Injection" },
       { "label": "Starter System",      "value": "Electric" },
-      { "label": "Lubrication System",  "value": "Wet Sump" },
-      { "label": "Transmission",        "value": "6-Speed Constant Mesh" }
+      { "label": "Lubrication System",  "value": "Wet sump" },
+      { "label": "Transmission",        "value": "6-speed constant mesh" }
     ]
   },
   {
@@ -98,20 +98,36 @@ const specTabs = [
     ]
   },
   {
-    "id": "chassis",
-    "label": "Chassis & Brakes",
+    "id": "brakes",
+    "label": "Brakes",
     "rows": [
-      { "label": "Frame Type",          "value": "Steel Trellis Frame" },
-      { "label": "Front Suspension",    "value": "Telescopic, Coil Spring, Oil Damped" },
-      { "label": "Rear Suspension",     "value": "Swing Arm Type, Coil Spring, Oil Damped" },
-      { "label": "Front Brake",         "value": "Disc, Single" },
-      { "label": "Rear Brake",          "value": "Disc" },
-      { "label": "ABS",                 "value": "Dual Channel ABS (Standard)" },
-      { "label": "Front Tyre",          "value": "100/90-19M/C 57S, Tubeless" },
-      { "label": "Rear Tyre",           "value": "140/70-17M/C 66S, Tubeless" },
-      { "label": "Rake / Trail",        "value": "27° / 97 mm" },
-      { "label": "Ignition System",     "value": "Electronic Ignition" },
-      { "label": "Battery",             "value": "Maintenance Free, 12V 6Ah" },
+      { "label": "Front",               "value": "Disc, single" },
+      { "label": "Rear",                "value": "Disc" }
+    ]
+  },
+  {
+    "id": "tyres",
+    "label": "Tyres Size",
+    "rows": [
+      { "label": "Front",               "value": "100/90-19M/C 57S, tubeless" },
+      { "label": "Rear",                "value": "140/70-17M/C 66S, tubeless" },
+      { "label": "Rake / Trail",        "value": "27° / 97 mm" }
+    ]
+  },
+  {
+    "id": "suspension",
+    "label": "Suspension",
+    "rows": [
+      { "label": "Front",               "value": "Telescopic, coil spring, oil damped" },
+      { "label": "Rear",                "value": "Swing arm type, coil spring, oil damped" }
+    ]
+  },
+  {
+    "id": "electrical",
+    "label": "Electrical",
+    "rows": [
+      { "label": "Ignition System",     "value": "Electronic ignition" },
+      { "label": "Battery",             "value": "Maintenance Free, 12V 6AH" },
       { "label": "Headlight & Tail Light", "value": "LED" }
     ]
   }
