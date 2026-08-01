@@ -615,7 +615,7 @@ export default function AvenisPage() {
             >
               <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden shadow-sm border border-gray-200 bg-gray-50 flex items-center justify-center">
                 <Image 
-                  src="/images/scooters/avenis/overview_image.png" 
+                  src="/images/scooters/Avenis/overview_image.png" 
                   alt="Avenis Brochure" 
                   fill 
                   className="object-contain p-4 group-hover:scale-105 transition-transform duration-500" 
