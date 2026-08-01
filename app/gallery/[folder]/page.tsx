@@ -68,20 +68,20 @@ export default function AlbumPage() {
             <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-suzuki-blue"></div>
           </div>
         ) : resources.length > 0 ? (
-          <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {resources.map((res, index) => (
               <motion.div
                 key={res.public_id}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.3, delay: index * 0.05 }}
-                className="relative break-inside-avoid rounded-xl overflow-hidden bg-slate-100 cursor-pointer shadow-sm hover:shadow-xl transition-all group"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: index * 0.04 }}
+                className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-slate-100 cursor-pointer shadow-md hover:shadow-2xl transition-all duration-300 group border border-slate-100"
                 onClick={() => setSelectedIndex(index)}
               >
                 {res.resource_type === 'video' ? (
-                  <div className="relative aspect-video flex items-center justify-center">
+                  <div className="relative w-full h-full flex items-center justify-center">
                     <div className="absolute inset-0 flex items-center justify-center z-10">
-                      <div className="w-12 h-12 bg-suzuki-red/90 backdrop-blur-md rounded-full flex items-center justify-center text-white text-xs pl-1">
+                      <div className="w-14 h-14 bg-suzuki-red/90 backdrop-blur-md rounded-full flex items-center justify-center text-white text-sm pl-1 shadow-lg group-hover:scale-110 transition-transform">
                         ▶
                       </div>
                     </div>
@@ -90,15 +90,17 @@ export default function AlbumPage() {
                     </video>
                   </div>
                 ) : (
-                  <div className="relative">
-                    <img
+                  <div className="relative w-full h-full">
+                    <Image
                       src={res.secure_url}
                       alt={res.public_id}
-                      className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      unoptimized
                     />
                   </div>
                 )}
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </motion.div>
             ))}
           </div>
