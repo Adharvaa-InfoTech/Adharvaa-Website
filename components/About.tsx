@@ -6,8 +6,8 @@ import Link from 'next/link'
 
 const stats = [
   { value: '20+', label: 'VARIANTS' },
-  { value: '2000+', label: 'HAPPY CUSTOMERS' },
-  { value: '10000+', label: 'VEHICLE SERVICED' },
+  { value: '10K+', label: 'HAPPY CUSTOMERS' },
+  { value: '50K+', label: 'VEHICLE SERVICED' },
 ]
 
 export default function About() {
