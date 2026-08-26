@@ -65,7 +65,7 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-400">
               <li>Sales: <a href="tel:+918940057000" className="hover:text-white transition">+91-89400 57000</a></li>
               <li>Service: <a href="tel:+918940057111" className="hover:text-white transition">+91-89400 57111</a></li>
-              <li>Email: <a href="mailto:care.suzuki@adharvaa.in" className="hover:text-white transition">care.suzuki@adharvaa.in</a></li>
+              <li>Email: <a href="mailto:sales.suzuki@adharvaa.in" className="hover:text-white transition">sales.suzuki@adharvaa.in</a></li>
               <li>Coimbatore, Tamil Nadu</li>
             </ul>
           </div>
