@@ -30,6 +30,7 @@ const motorcycleCards: MotorcycleCard[] = [
       { name: 'Yellow', image: '/images/bikes/v-strom-sx/v-strom-sx-yellowColour.png' },
       { name: 'Red', image: '/images/bikes/v-strom-sx/V-strom-sx-redColour.png' },
       { name: 'Black', image: '/images/bikes/v-strom-sx/V-strom-sx-blackColour.png' },
+      { name: 'White', image: '/images/bikes/v-strom-sx/vstrom-white.png' },
     ],
   },
   {
